@@ -1,0 +1,35 @@
+/**
+ * #.# Editor Styles
+ *
+ * CSS for just Backend enqueued after style.scss
+ * which makes it higher in priority.
+ */
+
+.wp-block-cgb-block-yellow-button {
+	input {
+		font-family: Muli, sans-serif;
+		line-height: 14px;
+		text-decoration: none;
+		padding: 10px 10px;
+		min-height: 36px;
+		font-size: 14px;
+		border-radius: 5px;
+		color: rgb(255, 255, 255);
+		justify-content: center;
+		display: flex;
+		width: 100%;
+		align-items: center;
+		border-width: 0px;
+		text-align: center;
+		font-weight: 600;
+		border-style: solid;
+		box-shadow: rgba(0, 0, 0, 0.16) 3px 3px 6px;
+		background: rgb(249, 205, 69);
+		transition: box-shadow 300ms ease 0s;
+	}
+
+	input:focus {
+		outline: none;
+		;
+	}
+}
