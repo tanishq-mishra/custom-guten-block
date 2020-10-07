@@ -19,7 +19,7 @@ import './style.scss';
 
 const { __ } = wp.i18n; // Import __() from wp.i18n
 const { registerBlockType } = wp.blocks; // Import registerBlockType() from wp.blocks
-const { RichText, InspectorControls, ColorPalette } = wp.editor;
+const { InspectorControls } = wp.editor;
 const { PanelBody } = wp.components;
 
 /**
@@ -96,8 +96,7 @@ registerBlockType('cgb/block-yellow-button', {
 					},
 					style: event.target.value,
 				})
-			}
-			else if (event.target.value === 'white') {
+			} else if (event.target.value === 'white') {
 				setAttributes({
 					outline: {
 						backgroundColor: '#f7f7f7',
@@ -105,8 +104,7 @@ registerBlockType('cgb/block-yellow-button', {
 					},
 					style: event.target.value,
 				})
-			}
-			else {
+			} else {
 				setAttributes({
 					outline: {
 					},
@@ -119,9 +117,7 @@ registerBlockType('cgb/block-yellow-button', {
 			<InspectorControls style={{ marginBottom: '40px' }}>
 				<PanelBody title={'Edit Properties'}>
 					<p>Enter the URL here:</p>
-
 					<input name="enter-url" value={attributes.url} onChange={addURL} />
-
 					<p><br />Select a Style</p>
 					<select id="style" onChange={changeStyle} value={attributes.style}>
 						<option value="yellow">Yellow</option>
